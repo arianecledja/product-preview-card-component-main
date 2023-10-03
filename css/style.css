@@ -1,0 +1,143 @@
+:root {
+    --dark-cyan: hsl(158, 36%, 37%);
+    --cream: hsl(30, 38%, 92%);
+    --very-dark-blue: hsl(212, 21%, 14%);
+    --dark-grayish-blue: hsl(228, 12%, 48%);
+    --white: hsl(0, 0%, 100%);
+    --margin-top: 1.5rem;
+    --font-title: 3rem;
+    font-size: 62.5%;
+}
+
+main {
+    background-color: var(--cream);
+    font-family:  'Montserrat', sans-serif;
+    font-weight: 500;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.conteiner {
+    background-color: var(--white);
+    width: 34rem;
+    font-size: 1.4rem;
+    color: var(--dark-grayish-blue);
+    border-radius: 1rem;
+    overflow: hidden;
+}
+
+.box-image > img {
+    width: 100%;
+    object-fit: cover;
+}
+
+.box-image .desktop-image {
+    display: none;
+}
+
+.content {
+    padding: 2.2rem;
+}
+
+    .content > span {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+        letter-spacing: .36rem;
+    }
+
+    .content > h2 {
+        margin-top: var(--margin-top);
+        font-family: 'Fraunces', serif;
+        font-weight: 700;
+        font-size: var(--font-title);
+        color: var(--very-dark-blue);
+    }
+
+    .content > p {
+        margin-top: var(--margin-top);
+    }
+
+    .content .prices {
+        margin-top: var(--margin-top);
+        margin-bottom: 1.5rem;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .content .prices .new-price {
+        color: var(--dark-cyan);
+        font-family: 'Fraunces', serif;;
+        font-weight: 700;
+        font-size: var(--font-title);
+    }
+
+    .content .prices .old-price {
+        align-self: center;
+        font-size: 1.2rem;
+        text-decoration: line-through;
+    }
+
+    .content > button {
+        width: 100%;
+        margin-top: var(--margin-top);
+        padding: 1.5rem;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: .9rem;
+        background-color: var(--dark-cyan);
+        color: var(--white);
+        border: none;
+        border-radius: .6rem;
+        font-family:  'Montserrat', sans-serif;
+        font-weight: 700;
+    }
+
+    .content > button > img {
+        width: 1.1rem;
+    }
+
+    .content > button:hover {
+        background-color: hsl(158, 36%, 20%);
+    }
+
+.attribution { 
+    margin-top: 1rem;
+    font-size: 1.1rem; 
+    text-align: center; 
+}
+
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+@media screen and (min-width:700px) {
+    .conteiner {
+        width: 55rem;
+        /* margin: auto; */
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .box-image .mobile-image {
+        display: none;
+    }
+    .box-image .desktop-image {
+        display: block;
+        width: 100%;
+        height: 100%;
+    }
+    .content {
+        padding: 2.6rem;
+    }
+    .content .prices .old-price {
+        margin-left: 1.5rem;
+    }
+    .content > p,
+    .content .prices,
+    .content > button {
+        margin-top: 2.1rem;
+    }
+}
