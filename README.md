@@ -34,8 +34,8 @@ Product preview card component challenge on Frontend Mentor
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [GitHub](https://github.com/arianecledja/product-preview-card-component-main)
+- Live Site URL: [Live site URL here](https://arianecledja.github.io/product-preview-card-component-main/)
 
 ## My process
 
